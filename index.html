@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRSU - Bangladesh Rohingya Student Union</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Head tag er moddhe add koro -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-gradient-to-r from-green-700 to-black backdrop-blur-md text-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <div class="flex items-center">
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-10 w-10 mr-3 object-contain" />
+                    <h1 class="text-lg font-semibold">Bangladesh Rohingya Student Union (BRSU)</h1>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="font-medium hover:text-white hover:underline transition">Home</a>
+                    <a href="about.html" class="font-medium hover:text-white hover:underline transition">About</a>
+
+                    <!-- Desktop Dropdown -->
+                    <div class="relative dropdown-container">
+                        <button class="font-medium hover:text-white hover:underline transition">Our Work</button>
+                        <div class="absolute hidden dropdown-menu bg-white text-gray-800 shadow-md mt-2 rounded-md w-48 z-50">
+                            <a href="education.html" class="block px-4 py-2 hover:bg-green-100">Education</a>
+                            <a href="advocacy.html" class="block px-4 py-2 hover:bg-green-100">Advocacy</a>
+                            <a href="social.html" class="block px-4 py-2 hover:bg-green-100">Social Service</a>
+                            <a href="sports.html" class="block px-4 py-2 hover:bg-green-100">Sports</a>
+                            <a href="blood.html" class="block px-4 py-2 hover:bg-green-100">Free-Blood Donation</a>
+                            <a href="livelihood.html" class="block px-4 py-2 hover:bg-green-100">Livelihood Activities</a>
+                            <a href="youth.html" class="block px-4 py-2 hover:bg-green-100">Youth-empowerment Program</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="font-medium hover:text-white hover:underline transition">Contact</a>
+                    <a href="donate.html" class="font-medium hover:text-white hover:underline transition">Donate Us</a>
+                </div>
+
+                <!-- Hamburger Icon -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Find this section in the HTML and replace it -->
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden absolute top-16 right-0 w-64 bg-white bg-opacity-90 backdrop-blur-md text-gray-800 shadow-lg rounded-lg p-4 space-y-2 z-50">
+    <a href="index.html" class="block font-medium hover:text-green-600 transition">Home</a>
+    <a href="about.html" class="block font-medium hover:text-green-600 transition">About</a>
+
+    <!-- Mobile Dropdown -->
+    <div>
+        <button id="our-work-mobile-toggle" class="w-full text-left font-medium hover:text-green-600 transition flex justify-between items-center">
+            Our Work
+            <span id="arrow-icon">&#9662;</span>
+        </button>
+        <div id="our-work-submenu" style="display: none;" class="pl-4 mt-2">
+                             <a href="education.html" class="block px-4 py-2 hover:bg-green-100">Education</a>
+                            <a href="advocacy.html" class="block px-4 py-2 hover:bg-green-100">Advocacy</a>
+                            <a href="social.html" class="block px-4 py-2 hover:bg-green-100">Social Service</a>
+                            <a href="sports.html" class="block px-4 py-2 hover:bg-green-100">Sports</a>
+                            <a href="blood.html" class="block px-4 py-2 hover:bg-green-100">Free-Blood Donation</a>
+                            <a href="livelihood.html" class="block px-4 py-2 hover:bg-green-100">Livelihood Activities</a>
+                            <a href="youth.html" class="block px-4 py-2 hover:bg-green-100">Youth-empowerment Program</a>
+        </div>
+    </div>
+
+    <a href="contact.html" class="block font-medium hover:text-green-600 transition">Contact</a>
+    <a href="donate.html" class="block font-medium hover:text-green-600 transition">Donate Us</a>
+</div>
+</div>
+</nav>
+
+<!-- Live News Ticker -->
+<div class="news-ticker">
+    <span class="breaking-label">Update and News : </span>
+    <div class="news-ticker-wrapper">
+        <span class="news-item">BRSU announces new scholarship program for Rohingya students - Applications open now!</span>
+        <span class="news-item">Upcoming football tournament at Kutupalong Camp - Register your team today</span>
+        <span class="news-item">Free blood donation drive scheduled for next week - Save lives, donate blood</span>
+        <span class="news-item">Youth empowerment workshop series begins this month - Join us for skill development</span>
+        <span class="news-item">BRSU advocacy team meets with international delegates to discuss Rohingya rights</span>
+        <span class="news-item">New livelihood training programs launched - Learn valuable skills for better opportunities</span>
+        <span class="news-item">Community health awareness campaign starts next Monday - Stay informed, stay healthy</span>
+    </div>
+</div>
+ <!-- Banner Slider ersection-->
+    <div class="relative overflow-hidden h-[400px] md:h-[500px]">
+        <div id="banner-slider" class="flex transition-transform duration-500 h-full">
+            <div class="min-w-full relative">
+                <img src="img/slide/slide1.jpg" alt="BRSU" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                    <div class="container mx-auto px-6">
+                        <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">Bangladesh Rohingya Student Union</h1>
+                        <p class="text-white text-lg md:text-xl mb-6">Empowering Rohingya Students through education, community and advocacy.</p>
+                        <a href="about.html" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition inline-block">Learn-More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-full relative">
+                <img src="img/slide/slide2.jpg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                    <div class="container mx-auto px-6">
+                        <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">Empowering Voices for a Better Tomorrow</h1>
+                        <p class="text-white text-lg md:text-xl mb-6">Raising voices, driving change — BRSU stands for justice and equality.</p>
+                        <a href="advocacy.html" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition inline-block">Learn-More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-full relative">
+                <img src="img/slide/slide3.jpg" alt="Strengthening Community Bonds Through Blood Donatio" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                    <div class="container mx-auto px-6">
+                        <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">Strengthening Community Bonds Through Blood Donation</h1>
+                        <p class="text-white text-lg md:text-xl mb-6">BRSU unites communities through the gift of blood — every drop counts.</p>
+                        <a href="blood.html" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition inline-block">Learn-More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner Navigation er jonno-->
+        <button id="prev-banner" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 p-2 rounded-full">
+            <i class="fas fa-chevron-left text-white"></i>
+        </button>
+        <button id="next-banner" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 p-2 rounded-full">
+            <i class="fas fa-chevron-right text-white"></i>
+        </button>
+        
+        <!-- Banner Indicators er jonno -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            <button class="h-2 w-8 bg-white bg-opacity-50 rounded-full banner-indicator active" data-index="0"></button>
+            <button class="h-2 w-8 bg-white bg-opacity-50 rounded-full banner-indicator" data-index="1"></button>
+            <button class="h-2 w-8 bg-white bg-opacity-50 rounded-full banner-indicator" data-index="2"></button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Mission Statement -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Mission</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Our mission is to uplift Rohingya students and youth by expanding access to quality education, fostering leadership and civic engagement, promoting mental health and well-being, and preserving our cultural heritage. We are committed to grassroots organizing, global advocacy for a durable solution for genocide survivors, and community-driven action through meaningful partnerships—working to amplify Rohingya voices and create lasting impact for our people and future generations.
+                </p>
+            </div>
+        </section>
+
+       
+       
+        <!-- Featured Sections -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            
+<!-- education -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/education.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Education</h3>
+    <p class="text-sm flex-grow">BRSU works to ensure Rohingya youth have access to quality education...</p>
+    <a href="education.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+
+
+<!-- advocacy -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/Advocacy.jpeg" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Advocacy</h3>
+    <p class="text-sm flex-grow">BRSU raises Rohingya voices locally and globally, advocating for rights, justice, and lasting peace through youth-led action and international solidarity...</p>
+    <a href="education.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div> 
+
+<!-- Social service -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/social.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Social Services</h3>
+    <p class="text-sm flex-grow">BRSU supports the Rohingya community through youth-led initiatives in education, health, relief, and awareness—building resilience and unity from the ground up...</p>
+    <a href="social.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+
+<!-- sport -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/sport.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Sports</h3>
+    <p class="text-sm flex-grow">BRSU promotes sports to build teamwork, discipline, and well-being among Rohingya youth, creating safe spaces for growth and connection...</p>
+    <a href="sports.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+<!-- blood -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/blood.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Free-blood Donation</h3>
+    <p class="text-sm flex-grow">Through regular blood donation drives, BRSU fosters a culture of saving lives and serving the broader community in times of medical need...</p>
+    <a href="blood.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+<!-- Livelihood Activities -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/livelihood.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Livelihood Activities</h3>
+    <p class="text-sm flex-grow">BRSU supports skill-building and income-generating activities to help Rohingya youth become self-reliant and secure sustainable futures...</p>
+    <a href="livelihood.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+<!-- Youth Empowerment Program ETC -->
+<div class="bg-white text-black rounded-lg overflow-hidden shadow-md flex flex-col min-h-[360px]">
+  <!-- Card content -->
+  <img src="img/indexP/youth-empowerment.png" alt="..." class="w-full h-92 object-cover">
+  <div class="p-4 flex flex-col flex-grow">
+    <h3 class="text-lg font-semibold mb-2">Youth Empowerment Program</h3>
+    <p class="text-sm flex-grow">BRSU empowers young Rohingya to lead with confidence through education, leadership training, and community-driven action...</p>
+    <a href="youth.html" class="mt-auto text-blue-500 hover:underline flex items-center gap-1">Read more →</a>
+  </div>
+</div>
+ 
+    </section>
+
+        <!-- Upcoming Events Preview -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Upcoming Events</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Football Tournament </h3>
+                    <p class="text-gray-600 mb-3"><span class="font-semibold">Location:</span> Kutupalong Registered Refugee Camp.</p>
+                    <p class="text-gray-700">Get ready for the thrill of the upcoming football tournament at Kutupalong Registered Camp.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Let the Indoor Games Begin!</h3>
+                    <p class="text-gray-600 mb-3"><span class="font-semibold">Location:</span> BRSU Community Center</p>
+                    <p class="text-gray-700">
+                      An exciting indoor games competition is coming soon to Kutupalong Registered Camp.
+                    Join the fun, showcase your skills, and enjoy the spirit of friendly competition!</p>
+                </div>
+                <div class="mt-6 text-center">
+                    <a href="sports.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">View All Events</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
